@@ -23,9 +23,16 @@ export default {
         },
         {
             name: 'content',
-            type: 'text',
-            title: 'Сэдэв',
-            
+            type: 'array',
+            title: 'Манга',
+            of: [
+              {
+                type: 'block'
+              },
+              {
+                type: 'image'
+              }
+            ]
         },
         {
             name: 'cover_image',
